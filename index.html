@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TikTok Downloader - No Watermark</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>TikTok Downloader</h1>
+        <div class="input-container">
+            <input type="text" id="tiktokLink" placeholder="Paste TikTok link here...">
+            <button id="downloadBtn">Get Video</button>
+        </div>
+
+        <div class="loading-animation" id="loadingAnimation">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+        </div>
+
+        <div class="result-container" id="resultContainer">
+            <div class="video-preview">
+                <img id="videoThumbnail" src="" alt="Video Thumbnail">
+                <div class="overlay"></div>
+            </div>
+            <h2 id="videoTitle"></h2>
+            <div class="download-options">
+                <button id="downloadNoWmBtn" class="gradient-btn">Download (No Watermark)</button>
+                <select id="qualitySelect" style="display: none;">
+                    <option value="hd">HD Quality</option>
+                    <option value="sd">SD Quality</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="error-toast" id="errorToast"></div>
+
+        <div class="history-container" id="historyContainer">
+            <h3>Download History</h3>
+            <ul id="historyList"></ul>
+        </div>
+
+        <div class="share-buttons">
+            <p>Share this tool:</p>
+            <a href="#" id="shareWhatsapp" class="share-btn whatsapp">WhatsApp</a>
+            <a href="#" id="shareTelegram" class="share-btn telegram">Telegram</a>
+            <a href="#" id="shareTwitter" class="share-btn twitter">Twitter</a>
+        </div>
+    </div>
+
+    <footer class="credit-footer">
+        Made with ❤️ by <a href="#" target="_blank">Zyn</a>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
